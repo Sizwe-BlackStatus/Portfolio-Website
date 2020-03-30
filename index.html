@@ -3,97 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/3f8eccef9e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" 
-    <title>Portfolio Web</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://kit.fontawesome.com/3f8eccef9e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Web Portfolio</title>
 </head>
 <body>
-    <div class="grid-container">
-        <div class="header">
-        <h1>Black-Status</h1>
-        </div>
-
-        <div class="right" style="background-color:#aaa;">Contacts
-            <p>Johannesburg, South Africa</p> <i class="fas fa-search-location"></i>
-            <p>+27 74 609 9607</p> <i class="fas fa-mobile"></i>
-            <p>sizwezakhe.masemola@umuzi.org></p> <i class="fas fa-at"></i>
-
-            <p>Message me: </p>
-            <form action='/action_page.php'>
-                <div class='row'>
-                    <div class='col-25'>
-                        <label for="Firstname"></label>
-                    </div>
-                    <div class="col-75">
-                        <input type='text' id="firstname"
-                        name="firstname" placeholder="Firstname">
-                    </div>
-                </div>
-                <div class='row'>
-                    <div class='col-25'>
-                        <label for="Email"></label>
-                    </div>
-                    <div class="col-75">
-                        <input type='text' id="email"
-                        name="email" placeholder="E-mail">
-                    </div>
-                </div>
-                <div class='row'>
-                    <div class='col-25'>
-                        <label for="Subject"></label>
-                    </div>
-                    <div class="col-75">
-                        <input type='text' id="subject"
-                        name="subject" placeholder="Subject">
-                    </div>
-                </div>
-                <div class='row'>
-                    <div class='col-25'>
-                        <label for="Message"></label>
-                    </div>
-                    <div class="col-75">
-                        <textarea id="message"
-                        name="message" placeholder="Message" style="height: 100px;">
-                        </textarea>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
-
-            
-        </div>
-        <div class='middle' style="background-color: #bbb;">Content
-            <h1>The ABC's of me.</h1>
-        </div>
-        <div class="left" style="background-color: #aaa;">Menu
-            <nav class="menu-nav">
-                <ul>
+    <div class="MainDiv">
+        <nav class="TopNav">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <section class="topcon" id='main'>
+            <header class="showcase" id='home'>
+                <h1>Call me Sizwe...</h1>
+                <p>
+                    I'm a website designer.
+                </p>
+                <img src="pics/apple-devices-computer-contemporary-dark-234527.jpg" alt="">
+            </header>
+        </section>
+        <section class="info" id='about'>
+            <div>
+                <h1>Summary: </h1>
+                <p>
+                    I am a 25 year old, South African born, male graduate from Tshwane University of Technology.
+                    Currently doing my Web-Dev learnership at Umuzi. I am charismatic and self-driven and I always
+                    say, what I lack in experience I will make up for in work ethic.
+                    Carpe Diem.
+                </p>
+                <h3>Professional Skills</h3>
+                <ul> 
                     <li>
-                        <a ref="#">Home</a>
-                   </li>
-                   <li>
-                       <a ref="#">Portfolio</a>
-                   </li>
-                   <li>
-                       <a ref="#">Skills</a>
-                   </li>
-                   <li>
-                       <a ref="#">About</a>
-                   </li>
+                        Python
+                    </li>
+                    <li>
+                        SQL
+                    </li>
+                    <li>
+                        C++
+                    </li>
                 </ul>
-            </nav>
-        </div>
-        <div class="footer" style="background-color: #aaa;">Footer
-            <i class="fab fa-facebook-f"></i>
-        </div>
-        
+                <a href="resume/my-resume.pdf" class="btn">Download Resume
+                    <i class="fas fa-file-download"></i>
+                </a>
+                <div>
+                    <a href="#home" class="btn">Back</a>
+                </div>
+            </div>
+        </section>
+        <section class="work" id='portfolio'>
+            <h1>
+                Portfolio Pending... 
+            </h1>
+            <div>
+                <a href="#home" class="btn">Back</a>
+            </div>
+        </section>
+        <section class="contact-section" id='contact'>
+            <div class="container">
+                <h2>Contact Me</h2>
+                    <div class="contact-form">
+                        <div>
+                            <i class="fas fa-search-location"></i><span class="form-info"> Johannesburg, South Africa</span><br>
+                            <i class="fas fa-mobile"></i><span class="form-info"> +27 74 609 6099</span><br>
+                            <i class="fas fa-at"></i><span class="form-info"> sizwezakhe.masemola@umuzi.org</span>
+                        </div>
+                    </div>
+            </div>
+            <div>
+                <form>
+                    <input type="text" placeholder="First Name..." required>
+                    <input type="Email" placeholder="Email..." required>
+                    <input type="text" placeholder="Subject..." required>
+                    <textarea name="message" placeholder="Message..." rows="7" required></textarea>
+                    <button class="submission">Submit</button>
 
-        </div>
+                </form>
+            </div>
+            <div>
+                <a href="#home" class="btn">Back</a>
+            </div>      
+            
+        </section>
+        <footer>
+            <a href="https://web.facebook.com/sizwe.clutchi" class="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/blackstatus_6/?hl=en" class="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+                
+        </footer>
+    
     </div>
-</body>
-
 </body>
 </html>
