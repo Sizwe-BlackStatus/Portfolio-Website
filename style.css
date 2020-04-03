@@ -177,6 +177,18 @@ textarea{
 textarea::placeholder{
     color: var(--dark);
 }
+.form_section{
+    left: 50%;
+    max-width: 500px;
+}
+.form_section #error{
+    margin: 10px;
+    width: 70%;
+    background-color:#da0606;
+    text-align: center;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
 .submission{
     width: 40%;
     background: none;
@@ -188,15 +200,14 @@ textarea::placeholder{
     height: 33px;
     text-align: center;
     cursor: pointer;
-    margin-left: 0.5%;
+    margin-left: 1%;
     border: 2px solid var(--dark);
     color: var(--dark);
 }
-.footer {
-    margin-top: 2rem;
-    background: var(--dark);
+.icons {
     color: var(--light);
     text-align: center;
+    font-size: 4rem;
     padding: 1rem;
   }
   /* Media Queries */
@@ -234,4 +245,3 @@ textarea::placeholder{
         'showcase';
     }
   }
-  

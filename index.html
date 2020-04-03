@@ -6,25 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script defer src="https://kit.fontawesome.com/3f8eccef9e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Web Portfolio</title>
 </head>
 <body>
     <div class="MainDiv">
         <nav class="TopNav">
-            <ul>
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <a href="#home"><i class="fas fa-laptop-house"></i></a>
+                    </li>
+                    <li>
+                        <a href="#about"><i class="fas fa-info"></i></a>
+                    </li>
+                    <li>
+                        <a href="#portfolio"><i class="fas fa-briefcase"></i></a>
+                    </li>
+                    <li>
+                        <a href="#contact"><i class="fas fa-phone-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+            
         </nav>
     
         <section class="topcon" id='main'>
@@ -61,7 +64,7 @@
                     <i class="fas fa-file-download"></i>
                 </a>
                 <div>
-                    <a href="#home" class="btn">Back</a>
+                    <a href="#home" class="btn">BackHome</a>
                 </div>
             </div>
         </section>
@@ -70,7 +73,7 @@
                 Portfolio Pending... 
             </h1>
             <div>
-                <a href="#home" class="btn">Back</a>
+                <a href="#home" class="btn">BackHome</a>
             </div>
         </section>
         <section class="contact-section" id='contact'>
@@ -84,28 +87,30 @@
                         </div>
                     </div>
             </div>
-            <div>
-                <form>
-                    <input type="text" placeholder="First Name..." required>
-                    <input type="Email" placeholder="Email..." required>
-                    <input type="text" placeholder="Subject..." required>
-                    <textarea name="message" placeholder="Message..." rows="7" required></textarea>
-                    <button class="submission">Submit</button>
-
+            <div class="form_section">
+                <div id="error"></div>
+                <form id="form-user"  onsubmit="return validation();" >
+                    <input type="text" id="inp-Firstname" placeholder="First Name..." >
+                    <input type="Email" id="inp-email"  placeholder="Email..." >
+                    <input type="text" id="inp-subject"  placeholder="Subject..." >
+                    <textarea name="message" id="inp-msg"  placeholder="Message..." rows="7" ></textarea>
+                    <button class="submission" id="send">Submit</button>
                 </form>
             </div>
             <div>
-                <a href="#home" class="btn">Back</a>
+                <a href="#home" class="btn">BackHome</a>
             </div>      
             
         </section>
         <footer>
-            <a href="https://web.facebook.com/sizwe.clutchi" class="Facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/blackstatus_6/?hl=en" class="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
+            <div class="icons">
+                <a href="https://web.facebook.com/sizwe.clutchi" class="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/blackstatus_6/?hl=en" class="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
                 
         </footer>
     
