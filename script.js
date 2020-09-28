@@ -5,7 +5,7 @@
     var message = document.getElementById("inp-msg").value;
     var Error_warn = document.getElementById("error");
     var text;
-
+    
     if(name.length < 3){
         text = "Valid Name required!";
         Error_warn.innerHTML = text;

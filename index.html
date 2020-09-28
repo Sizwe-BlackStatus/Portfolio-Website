@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,111 +10,141 @@
     <script defer src="script.js"></script>
     <title>Web Portfolio</title>
 </head>
+
 <body>
     <div class="MainDiv">
         <nav class="TopNav">
+            <ul>
+                <li>
+                    <a href="#home"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="#about"><i class="fas fa-user"></i> About</a>
+                </li>
+                <li>
+                    <a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact"><i class="fas fa-phone-alt"></i> Contact</a>
+                </li>
+            </ul>
+
+    </div>
+
+    </nav>
+
+    <section class="topcon" id='main'>
+        <header class="showcase" id='home'>
+            <h1>I'm Sizwe...</h1>
+            <h2>
+                Junior Web Developer.
+            </h2>
+            <div class="image">
+                <img src="pics/Cover.jpeg" alt="">
+            </div>
+            
+        </header>
+    </section>
+    <section class="info" id='about'>
+        <div>
+            <h1>Summary: </h1>
+            <p>
+                I am a 25 year old, South African born, male graduate from Tshwane University of Technology.
+                Currently doing my Web-Dev learnership at Umuzi. I am charismatic and self-driven and I always
+                say, what I lack in experience I will make up for in work ethic.
+                Carpe Diem.
+            </p>
+            <h3>Professional Skills</h3>
+            <div class="Skills">
                 <ul>
                     <li>
-                        <a href="#home"><i class="fas fa-laptop-house"></i></a>
+                        <img src="https://img.icons8.com/color/96/000000/python.png" />
                     </li>
                     <li>
-                        <a href="#about"><i class="fas fa-info"></i></a>
+                        <img src="https://img.icons8.com/color/96/000000/html-5.png" />
                     </li>
                     <li>
-                        <a href="#portfolio"><i class="fas fa-briefcase"></i></a>
+                        <img src="https://img.icons8.com/color/96/000000/css3.png" />
                     </li>
                     <li>
-                        <a href="#contact"><i class="fas fa-phone-alt"></i></a>
+                        <img src="https://img.icons8.com/color/96/000000/mongodb.png" />
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/color/96/000000/javascript.png" />
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/color/96/000000/postgreesql.png" />
+                    </li>
+                    <li>
+                        <img src="pics/Webp.net-resizeimage.png" />
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/color/96/000000/nodejs.png" />
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/color/96/000000/react-native.png" />
                     </li>
                 </ul>
             </div>
-            
-        </nav>
-    
-        <section class="topcon" id='main'>
-            <header class="showcase" id='home'>
-                <h1>Call me Sizwe...</h1>
-                <p>
-                    I'm a website designer.
-                </p>
-                <img src="pics/apple-devices-computer-contemporary-dark-234527.jpg" alt="">
-            </header>
-        </section>
-        <section class="info" id='about'>
+
+
+            <a href="Resume/Resume (2).pdf" class="btn">Download Resume</a>
             <div>
-                <h1>Summary: </h1>
-                <p>
-                    I am a 25 year old, South African born, male graduate from Tshwane University of Technology.
-                    Currently doing my Web-Dev learnership at Umuzi. I am charismatic and self-driven and I always
-                    say, what I lack in experience I will make up for in work ethic.
-                    Carpe Diem.
-                </p>
-                <h3>Professional Skills</h3>
-                <ul> 
-                    <li>
-                        Python
-                    </li>
-                    <li>
-                        SQL
-                    </li>
-                    <li>
-                        C++
-                    </li>
-                </ul>
-                <a href="resume/my-resume.pdf" class="btn">Download Resume
-                    <i class="fas fa-file-download"></i>
-                </a>
+                <a href="#home" class="btn">BackHome</a>
+            </div>
+        </div>
+    </section>
+    <section class="work" id='portfolio'>
+        <h1>
+            Portfolio Pending...
+        </h1>
+        <div>
+            <a href="#home" class="btn">BackHome</a>
+        </div>
+    </section>
+    <section class="contact-section" id='contact'>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
                 <div>
-                    <a href="#home" class="btn">BackHome</a>
+                    <i class="fas fa-search-location"></i><span class="form-info"> Pretoria, South Africa</span><br>
+                    <i class="fas fa-mobile"></i><span class="form-info"> +27 74 609 9607</span><br>
+                    <i class="fas fa-at"></i><span class="form-info"> sizwezakhe.masemola@umuzi.org</span>
                 </div>
             </div>
-        </section>
-        <section class="work" id='portfolio'>
-            <h1>
-                Portfolio Pending... 
-            </h1>
-            <div>
-                <a href="#home" class="btn">BackHome</a>
-            </div>
-        </section>
-        <section class="contact-section" id='contact'>
-            <div class="container">
-                <h2>Contact Me</h2>
-                    <div class="contact-form">
-                        <div>
-                            <i class="fas fa-search-location"></i><span class="form-info"> Johannesburg, South Africa</span><br>
-                            <i class="fas fa-mobile"></i><span class="form-info"> +27 74 609 6099</span><br>
-                            <i class="fas fa-at"></i><span class="form-info"> sizwezakhe.masemola@umuzi.org</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="form_section">
-                <div id="error"></div>
-                <form id="form-user"  onsubmit="return validation();" >
-                    <input type="text" id="inp-Firstname" placeholder="First Name..." >
-                    <input type="Email" id="inp-email"  placeholder="Email..." >
-                    <input type="text" id="inp-subject"  placeholder="Subject..." >
-                    <textarea name="message" id="inp-msg"  placeholder="Message..." rows="7" ></textarea>
-                    <button class="submission" id="send">Submit</button>
-                </form>
-            </div>
-            <div>
-                <a href="#home" class="btn">BackHome</a>
-            </div>      
-            
-        </section>
-        <footer>
-            <div class="icons">
-                <a href="https://web.facebook.com/sizwe.clutchi" class="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/blackstatus_6/?hl=en" class="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-                
-        </footer>
-    
-    </div>
+        </div>
+        <div class="form_section">
+            <div id="error"></div>
+            <form id="form-user" onsubmit="return validation()">
+                <input type="text" id="inp-Firstname" placeholder="First Name...">
+                <input type="Email" id="inp-email" placeholder="Email...">
+                <input type="text" id="inp-subject" placeholder="Subject...">
+                <textarea name="message" id="inp-msg" placeholder="Message..." rows="7"></textarea>
+                <button class="submission" id="send">Submit</button>
+            </form>
+        </div>
+        <div>
+            <a href="#home" class="btnForm">BackHome</a>
+        </div>
+
+    </section>
+    <footer>
+        <ul class="icons" id="footersection">
+            <li><a href="https://web.facebook.com/sizwe.clutchi" class="Facebook">
+                    <img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" />
+                </a></li>
+            <li><a href="https://www.instagram.com/blackstatus_6/?hl=en" class="Instagram">
+                    <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" />
+                </a></li>
+            <li><a href="https://www.linkedin.com/in/sizwe-masemola-671144178/" class="Instagram">
+                    <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" />
+                </a></li>
+        </ul>
+        </div>
+        <div class="switch-button">
+            <a href="./start.html"><i class="fas fa-power-off"></i></a>
+        </div>
+    </footer>
 </body>
+
 </html>
